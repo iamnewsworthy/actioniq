@@ -12,11 +12,8 @@ Vagrant::Config.run do |config|
 # tools to be installed on box
   chef.add_recipe "vim"
   chef.add_recipe "git"
-
-# install nagios
-  chef.add_recipe "nagios"
     
-# setup users (from data_bags/users/*.json)
+# setup users (from databags/users/*.json)
 
 # chef.log_level = :debug
 
