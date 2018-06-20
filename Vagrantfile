@@ -7,7 +7,6 @@ Vagrant::Config.run do |config|
 
 # configure paths for chef databags, cookbooks, etc
   chef.data_bags_path = "databags"
-  
   chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
 # apps to be installed on box
