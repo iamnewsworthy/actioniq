@@ -9,3 +9,4 @@ supports 'ubuntu'
 
 depends 'nginx', '~> 8.1.2'
 depends 'mysql', '~> 8.5'
+depends 'database', '~> 6.1'
