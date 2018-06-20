@@ -35,7 +35,7 @@ end
 # create prod user
 mysql_database_user 'prod_god' do
   connection mysql_connection_info
-  password data_bag_item['password']  
+  password data_bag_item['admin_password']  
   privileges [:all]
   action [:create, :grant]
 end
