@@ -8,7 +8,7 @@
     "ssh-rsa joe@actioniq.com"
   ],
   "id": "joe",
-  "shell": "/bin/bash",
+  "shell": "\/bin\/bash",
   "email": "joe@actioniq.com",
-  "home_dir": "/home/joe",
+  "home_dir": "\/home\/joe",
 }
