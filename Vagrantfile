@@ -11,8 +11,8 @@ Vagrant::Config.run do |config|
   chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
 # tools to be installed on box
-  chef.add_recipe "vim"
-  chef.add_recipe "git"
+  chef.add_recipe "nginx"
+  chef.add_recipe "mysql"
     
 # setup users (from databags/users/*.json)
 
