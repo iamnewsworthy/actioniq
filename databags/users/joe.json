@@ -1,0 +1,14 @@
+#if i was better at this i would have a user template and then pull relevant attributes from a directory service as needed
+{
+  "groups": [
+    "user"
+  ],
+  #hashed password, generated via openssl passwd -1 "Th1$1$B@d!"
+  "password": "would_be_encrypted",
+  "ssh_keys": [
+    "ssh-rsa blahblah== joe@actioniq.com"
+  ],
+  "id": "joe",
+  "shell": "/bin/bash",
+  "email": "joe@actioniq.com"
+}
