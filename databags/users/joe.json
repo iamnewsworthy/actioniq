@@ -3,12 +3,13 @@
   "groups": [
     "user"
   ],
-  #hashed password, generated via openssl passwd -1 "Th1$1$B@d!"
-  "password": "would_be_encrypted",
+  "comment": "hashed password, generated via openssl passwd"
+  "password": "would_be_encrypted_via_above",
   "ssh_keys": [
     "ssh-rsa blahblah== joe@actioniq.com"
   ],
   "id": "joe",
   "shell": "/bin/bash",
   "email": "joe@actioniq.com"
+  "home_dir": "/home/joe"
 }
