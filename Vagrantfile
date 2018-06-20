@@ -13,6 +13,7 @@ Vagrant::Config.run do |config|
 # tools to be installed on box
   chef.add_recipe "nginx"
   chef.add_recipe "mysql"
+  chef.add_recipe "nagios"
     
 # setup users (from databags/users/*.json)
 
