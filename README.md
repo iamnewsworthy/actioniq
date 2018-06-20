@@ -1,7 +1,3 @@
-# actioniq
-# THIS WILL CONTAIN README INFORMATION DOWN THE ROAD
-
-
 #create project in vagrant
 vagrant box add precise64 http://files.vagrantup.com/precise64.box
 
