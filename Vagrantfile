@@ -9,9 +9,12 @@ Vagrant::Config.run do |config|
   chef.data_bags_path = "databags"
   chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
-# apps to be installed on box
+# tools to be installed on box
   chef.add_recipe "vim"
   chef.add_recipe "git"
+
+# install nagios
+  chef.add_recipe "nagios"
     
 # setup users (from data_bags/users/*.json)
 
