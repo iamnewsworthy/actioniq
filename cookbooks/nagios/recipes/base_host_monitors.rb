@@ -14,3 +14,11 @@ nagios_nrpecheck "check_all_disks" do
   parameters "-A -x /dev/shm -X nfs -i /boot"
   action :add
 end
+
+# test the current system load average
+nagios_nrpecheck "check_mem" do
+  command "#{node['nagios']['plugin_dir']}/check_mem"
+  warning_condition "20"
+  critical_condition "10"
+  action :add
+end
