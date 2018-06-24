@@ -11,11 +11,16 @@ Vagrant.configure("2") do |config|
   chef.data_bags_path = "databags"
   chef.roles_path = "roles"
 
-# tools to be installed on box
+# recipes to be installed on the box
   chef.add_recipe "nginx"
   chef.add_recipe "mysql"
   chef.add_recipe "nagios"
     
+# roles to be configured on the box
+  chef.add_role("monitoring")
+  chef.add_role("server_base")  
+  chef.add_role("web")
+
 # setup users (from databags/users/*.json)
 
 # chef.log_level = :debug
