@@ -1,0 +1,8 @@
+{
+  "id": "nagios_admin",
+  "groups": "sysadmin",
+  "htpasswd": "encrypted_password",
+  "nagios": {
+    "email": "nagios_admin@actioniq.com"
+  }
+}
