@@ -12,10 +12,11 @@ Vagrant.configure("2") do |config|
   chef.roles_path = "roles"
 
 # recipes to be installed on the box
-  chef.add_recipe "nginx"
+  chef.add_recipe "apt"
   chef.add_recipe "mysql"
-  chef.add_recipe "nagios"
-    
+  chef.add_recipe "nagios"  
+  chef.add_recipe "nginx"
+
 # roles to be configured on the box
   chef.add_role("monitoring")
   chef.add_role("server_base")  
