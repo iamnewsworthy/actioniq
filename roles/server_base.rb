@@ -5,7 +5,7 @@ run_list(
   # this adds NRPE (Nagios Remote Plugin Extension) support for all systems to be monitored
   'recipe[nagios::client]',
   # this installs base NRPE checks (see below)
-  'recipe[example::base_monitoring]'
+  'recipe[example::base_host_monitors]'
 )
 
 default_attributes(
