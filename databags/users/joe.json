@@ -11,4 +11,7 @@
   "shell": "\/bin\/bash",
   "email": "joe@actioniq.com",
   "home_dir": "\/home\/joe",
+  "nagios": {
+    "email": "joe@actioniq.com"
+  }
 }
