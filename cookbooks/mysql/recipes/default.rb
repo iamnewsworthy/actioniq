@@ -32,10 +32,36 @@ mysql_database 'staging' do
   action :create
 end
 
+# Create a dev database
+mysql_database 'dev' do
+  connection(
+    :host     => '127.0.0.1',
+    :username => 'root',
+    :password => node['dev']['mysql']['initial_root_password']
+  )
+  action :create
+end
+
 # create prod user
 mysql_database_user 'prod_god' do
   connection mysql_connection_info
   password data_bag_item['admin_password']  
+  privileges [:all]
+  action [:create, :grant]
+end
+
+# create bob dev user
+mysql_database_user 'bob_dev' do
+  connection mysql_connection_info
+  password data_bag_item['bob_dev']  
+  privileges [:all]
+  action [:create, :grant]
+end
+
+# create joe dev user
+mysql_database_user 'joe_dev' do
+  connection mysql_connection_info
+  password data_bag_item['joe_dev']  
   privileges [:all]
   action [:create, :grant]
 end
