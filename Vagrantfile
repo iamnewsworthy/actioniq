@@ -16,6 +16,7 @@ Vagrant.configure("2") do |config|
   chef.add_recipe "mysql"
   chef.add_recipe "nagios"  
   chef.add_recipe "nginx"
+  chef.add_recipe "nrpe"
 
 # roles to be configured on the box
   chef.add_role("monitoring")
