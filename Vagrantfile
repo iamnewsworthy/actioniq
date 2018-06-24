@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
 
 # recipes to be installed on the box
   chef.add_recipe "apt"
+  chef.add_recipe "logrotate"
   chef.add_recipe "mysql"
   chef.add_recipe "nagios"  
   chef.add_recipe "nginx"
