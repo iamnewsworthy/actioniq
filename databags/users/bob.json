@@ -11,6 +11,7 @@
   "shell": "/bin/bash",
   "email": "bob@actioniq.com",
   "home_dir": "/home/bob",
+  "htpasswd": "encrypted_password",
   "nagios": {
     "email": "bob@actioniq.com"
 }
